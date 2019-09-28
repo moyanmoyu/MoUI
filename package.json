@@ -1,0 +1,53 @@
+{
+  "name": "moui",
+  "version": "1.0.0",
+  "description": "MoUI",
+  "main": "dist/lib/index",
+  "types": "dist/lib/index",
+  "scripts": {
+    "test": "jest --config jest.config.js",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --config webpack.config.dev.js",
+    "build": "cross-env NODE_ENV=production webpack --config webpack.config.prod.js",
+    "debug": "node --inspect-brk ./node_modules/webpack/bin/webpack.js --config webpack.config.prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moyanmoyu/MoUI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/moyanmoyu/MoUI/issues"
+  },
+  "homepage": "https://github.com/moyanmoyu/MoUI#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.6.2",
+    "@babel/preset-react": "^7.0.0",
+    "@types/react": "^16.9.3",
+    "@types/react-dom": "^16.9.1",
+    "@types/react-test-renderer": "^16.9.0",
+    "awesome-typescript-loader": "^5.2.1",
+    "babel-jest": "^24.9.0",
+    "cross-env": "^6.0.0",
+    "css-loader": "^3.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^24.9.0",
+    "node-sass": "^4.12.0",
+    "react-test-renderer": "^16.9.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0",
+    "svg-sprite-loader": "^4.1.6",
+    "ts-jest": "^24.1.0",
+    "ts-loader": "^6.1.2",
+    "typescript": "^3.6.3",
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.1"
+  },
+  "dependencies": {
+    "@types/jest": "^24.0.18",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  }
+}

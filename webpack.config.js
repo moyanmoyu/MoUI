@@ -25,7 +25,7 @@ module.exports = {
       },
       {
         test: /\.svg$/,
-        use: 'svg-sprite-loader'
+        use: 'svgs-sprite-loader'
       }
     ]
   }

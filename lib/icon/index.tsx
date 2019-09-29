@@ -1,5 +1,5 @@
 import React from 'react';
-import './../svg/wechat.svg';
+import '../svgs/wechat.svg';
 import './icon.scss';
 import classes from './../helpers/classes';
 

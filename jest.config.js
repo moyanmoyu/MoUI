@@ -6,7 +6,7 @@ module.exports = {
   moduleDirectories: ['node_modules'],
   globals: {
     'ts-jest': {
-      tsConfig: 'tsconfig.test.json'
+      tsConfig: 'tsconfig.test.js.json'
     },
   },
   moduleNameMapper: {
@@ -18,5 +18,5 @@ module.exports = {
     "^.+unit\\.(js|jsx)$": "babel-jest",
     '^.+\\.(ts|tsx)$': 'ts-jest',
   },
-  setupFilesAfterEnv: ["<rootDir>test/index.js"]
+  setupFilesAfterEnv: ["<rootDir>test/index.tsx"]
 };

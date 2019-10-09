@@ -1,7 +1,9 @@
 import React from 'react';
+import classes from '../helpers/classes';
 import '../svgs/wechat.svg';
+import '../svgs/close.svg';
+import '../svgs/loading.svg';
 import './icon.scss';
-import classes from './../helpers/classes';
 
 interface IconProps extends React.SVGAttributes<SVGElement>{
   name: string;
@@ -9,13 +11,15 @@ interface IconProps extends React.SVGAttributes<SVGElement>{
 
 const Icon: React.FunctionComponent<IconProps> = props => {
 
-  const {className, name, ...restProps} = props;
+  const {name, className, ...restProps} = props;
 
-  return <span>
-    <svg className={classes('mo-icon', className)} {...restProps}>
+  const loadingClassName = classes(name === 'loading' ? 'mo-icon-loading' : undefined, className);
+
+  return <i className="mo-icon">
+    <svg className={loadingClassName} {...restProps}>
       <use xlinkHref={`#${name}`} />
     </svg>
-  </span>;
+  </i>;
 
 };
 

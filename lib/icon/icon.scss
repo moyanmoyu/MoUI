@@ -1,4 +1,31 @@
 .mo-icon {
-  width: 1.4em;
-  height: 1.4em;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+
+  &-loading {
+    animation: loading 1s linear infinite;
+    transform-origin: center center;
+  }
+
+  svg {
+    width: 1em;
+    height: 1em;
+    color: currentColor;
+  }
+}
+
+
+@keyframes loading {
+  0% {
+    transform: rotate(0);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }

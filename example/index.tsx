@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import Icon from '../lib/icon/index';
-
+import { Icon, Button, ButtonGroup } from '../lib/index';
+import Dialog from './dialog';
 
 
 class App extends React.Component<any, any> {
@@ -42,6 +42,15 @@ class App extends React.Component<any, any> {
           console.log(e.target.value);
           this.name = e.target.value;
         }}/>
+
+        <ButtonGroup>
+          <Button icon="close" type="default" onClick={() => {console.log(111)}}>按钮</Button>
+          <Button type="primary" disabled={true}>按钮</Button>
+          <Button type="text">按钮</Button>
+          <Button type="danger">按钮</Button>
+          <Button type="warn">按钮</Button>
+        </ButtonGroup>
+        <Dialog />
       </div>
     );
   }

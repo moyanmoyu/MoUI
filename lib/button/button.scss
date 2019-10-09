@@ -1,0 +1,79 @@
+.mo-button {
+  display: inline-block;
+  line-height: 1.5;
+  border: 1px solid #DCDFE6;
+  color: #909399;
+  padding: 0 10px;
+  border-radius: 4px;
+  cursor: pointer;
+
+  .mo-icon {
+    vertical-align: -0.125em;
+  }
+
+  &-primary {
+    border-color: #409EFF;
+    color: #ffffff;
+    background-color: #409EFF;
+  }
+
+  &-success {
+    border-color: #67C23A;
+    color: #ffffff;
+    background-color: #67C23A;
+  }
+
+  &-danger {
+    border-color: #F56C6C;
+    color: #ffffff;
+    background-color: #F56C6C;
+  }
+
+  &-warn {
+    border-color: #E6A23C;
+    color: #ffffff;
+    background-color: #E6A23C;
+  }
+
+  &-info {
+    border-color: #909399;
+    color: #ffffff;
+    background-color: #909399;
+  }
+
+  &-loading {
+    opacity: 0.8;
+    cursor: default;
+  }
+
+  &-disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+
+  &-text {
+    padding: 0;
+    border: none;
+    color: #409EFF;
+  }
+
+  &-group {
+
+    .mo-button:not(:first-child):not(:last-child) {
+      border-radius: 0;
+    }
+
+    .mo-button:not(:last-child):first-child {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    .mo-button:not(:first-child):last-child {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+
+  }
+}
+
+

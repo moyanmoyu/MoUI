@@ -18,5 +18,5 @@ module.exports = {
     "^.+unit\\.(js|jsx)$": "babel-jest",
     '^.+\\.(ts|tsx)$': 'ts-jest',
   },
-  setupFilesAfterEnv: ["<rootDir>test/index.tsx"]
+  setupFilesAfterEnv: ["<rootDir>test/button.tsx"]
 };

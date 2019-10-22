@@ -26,12 +26,23 @@
   }
 
   &-header {
-
+    font-size: 18px;
   }
 
   &-main {
     padding: 10px;
     min-height: 3em;
+  }
+
+  &-content {
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 2em;
+
+    .mo-icon {
+      font-size: 20px;
+      margin-right: 6px;
+    }
   }
 
   &-footer {

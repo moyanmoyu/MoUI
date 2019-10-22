@@ -2,4 +2,12 @@ export {Button, ButtonGroup} from './button';
 
 export {default as Icon} from './icon';
 
-export {default as Dialog} from './dialog';
+export {Layout, Sider, Header, Content, Footer} from './layout';
+
+export {Dialog, confirm} from './dialog';
+
+export {Col, Row} from './grid';
+
+export {ConfigContext, ConfigProviderProps} from './configProvider/context';
+
+export {default as ConfigProvider} from './configProvider';

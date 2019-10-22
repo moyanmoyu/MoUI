@@ -1,0 +1,28 @@
+.mo-layout {
+  display: flex;
+  flex: 1;
+  flex-flow: column;
+
+  &-sider {
+    width: 200px;
+  }
+
+  &-has-sider {
+    flex-flow: row;
+  }
+
+  &-header {
+    height: 64px;
+    padding: 10px;
+  }
+
+  &-content {
+    flex: 1;
+    padding: 10px;
+  }
+
+  &-footer {
+    height: 64px;
+    padding: 10px;
+  }
+}

@@ -13,8 +13,10 @@ class DialogExample extends React.Component<any, any> {
     return (
       <div>
         <button onClick={() => {this.setState({visible: !this.state.visible})}}>change</button>
-        <Dialog visible={this.state.visible} title="提示" Footer={null}
-                onCancel={()=>{this.setState({visible: false})}} />
+        <Dialog width={'200px'} visible={this.state.visible} title="提示"
+                onCancel={()=>{this.setState({visible: false})}}>
+          <span>123</span>
+        </Dialog>
       </div>
     );
   }

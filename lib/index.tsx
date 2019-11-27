@@ -8,6 +8,10 @@ export {Dialog, confirm} from './dialog';
 
 export {Col, Row} from './grid';
 
+export { Input } from './input';
+
+export { Notification } from './notification';
+
 export {ConfigContext, ConfigProviderProps} from './configProvider/context';
 
 export {default as ConfigProvider} from './configProvider';

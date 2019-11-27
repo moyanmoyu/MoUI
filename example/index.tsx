@@ -1,7 +1,8 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import {Icon, Button, ButtonGroup, confirm, ConfigProvider, Layout, Sider, Header, Content, Col, Row} from '../lib/index';
+import {Icon, Button, ButtonGroup, confirm, ConfigProvider, Layout, Sider, Header, Content, Footer, Col, Row, Input, Notification} from '../lib/index';
 import Dialog from './dialog';
+import './index.scss';
 
 class App extends React.Component<any, any> {
 
@@ -71,8 +72,12 @@ class App extends React.Component<any, any> {
                 </Col>
               </Row>
 
+              <div>
+                <Input disabled={true} preLabel={'￥'} suffix={'.com'} maxLength={5} />
+              </div>
+
               <ButtonGroup>
-                <Button icon="close" type="default" onClick={() => {console.log(111);}}>按钮</Button>
+                <Button icon="close" type="default" onClick={() => {Notification.success()}}>按钮</Button>
                 <Button type="primary" disabled={true}>按钮</Button>
                 <Button type="text">按钮</Button>
                 <Button type="danger" onClick={this.renderConfirm}>按钮</Button>
@@ -80,6 +85,7 @@ class App extends React.Component<any, any> {
               </ButtonGroup>
               <Dialog/>
             </Content>
+            <Footer>footer</Footer>
           </Layout>
         </Layout>
       </ConfigProvider>
